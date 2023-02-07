@@ -6,7 +6,8 @@ app.use(express.json());
 app.post('/webhook', (req, res) => {
   const data = req.body;
   console.log(data);
-  res.sendStatus(200);
+  //res.sendStatus(200);
+  res.status(200).json({ 'msg': 'success','data':data })
 });
 
 app.listen(3000, () => {
@@ -14,3 +15,7 @@ app.listen(3000, () => {
 });
 
 console.log("webhook1 started..")
+
+
+//curl --request POST --url http:/127.0.0.1:3000/webhook --header 'Content-Type: application/jsonj' --data '{"param1":"param1","param2":"param2"}'
+//>curl --request POST --url "https://webhook1-lyyx.onrender.com:3000/webhook" --header "Content-Type: application/json" --data "{\"param1\":\"param1\",\"param2\":\"two\"}"
