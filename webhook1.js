@@ -9,8 +9,8 @@ app.post('/webhook', (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(80, () => {
-  console.log('Webhook server is listening on port 80');
+app.listen(3000, () => {
+  console.log('Webhook server is listening on port 3000');
 });
 
 console.log("webhook1 started..")
