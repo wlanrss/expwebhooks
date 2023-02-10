@@ -15,8 +15,8 @@ app.post('/webhook', (req, res) => {
   res.status(200).json({ 'msg': 'success','data':data })
 });
 
-app.listen(3000, () => {
-  console.log('Webhook server is listening on port 3000');
+app.listen(80, () => {
+  console.log('Webhook server is listening on port 80');
 });
 
 console.log("webhook1 started. Version 3.0")
