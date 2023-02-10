@@ -14,7 +14,7 @@ app.listen(3000, () => {
   console.log('Webhook server is listening on port 3000');
 });
 
-console.log("webhook1 started. Version 2.3")
+console.log("webhook1 started. Version 2.4")
 
 
 //curl --request POST --url http:/127.0.0.1:3000/webhook --header 'Content-Type: application/json' --data '{"param1":"param1","param2":"param2"}'
